@@ -14,8 +14,6 @@ import static org.hamcrest.Matchers.notNullValue;
 import static org.hamcrest.Matchers.startsWith;
 
 import org.hamcrest.Matchers;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -45,11 +43,6 @@ public class StringRelatedAssertionTests {
 
         responseSpecification = responseSpecBuilder.build();
         requestSpecification = requestSpecBuilder.build();
-    }
-
-    @Before
-    public void setup() {
-        // Any setup code you need to run before each test can go here
     }
 
     @Test
@@ -118,10 +111,5 @@ public class StringRelatedAssertionTests {
             .and()
             .assertThat()
             .body("page", equalTo(2), "data[0].first_name", equalTo("Michael"), "support.url", is(notNullValue()));
-    }
-
-    @After
-    public void teardown() {
-        // Any teardown code you need to run after each test
     }
 }
