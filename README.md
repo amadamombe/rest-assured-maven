@@ -22,7 +22,7 @@ Make sure you have surefire plugin in your pom xml and then run your tests as no
 After running the tests then run below command
 
 
-    allure serve /path/to/yuor/target/surefire-reports
+    allure serve /path/to/your/target/surefire-reports
 
     e.g
 
