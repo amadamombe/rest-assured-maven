@@ -18,7 +18,7 @@ Install Allure Using Homebrew:
     brew install allure
 
 
-Make sure you have surefire plugin in your pox xml and then run your tests as normal - 'mvn clean test'
+Make sure you have surefire plugin in your pom xml and then run your tests as normal - 'mvn clean test'
 After running the tests then run below command
 
 
